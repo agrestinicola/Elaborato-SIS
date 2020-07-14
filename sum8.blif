@@ -1,0 +1,38 @@
+.model sum8
+.inputs A7 A6 A5 A4 A3 A2 A1 A0
+.outputs O7 O6 O5 O4 O3 O2 O1 O0
+.names A7 A6 [48] O7
+1-- 1
+-10 1
+.names A6 [48] O6
+11 1
+00 1
+.names A5 [50] O5
+11 1
+00 1
+.names A4 C3 O4
+01 1
+10 1
+.names A3 A2 O2 C3 O3
+1--0 1
+-100 1
+.names A2 [49] O2
+11 1
+00 1
+.names A1 A0 O1
+01 1
+10 1
+.names A0 O0
+0 1
+.names A3 A2 [49] C3
+110 1
+.names A5 O5 [48]
+0- 1
+-1 1
+.names A1 A0 [49]
+0- 1
+-0 1
+.names A4 C3 [50]
+0- 1
+-0 1
+.end

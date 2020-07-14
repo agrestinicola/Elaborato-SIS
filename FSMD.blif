@@ -1,0 +1,122 @@
+.model FSMD
+.inputs init reset ph7 ph6 ph5 ph4 ph3 ph2 ph1 ph0
+.outputs St1 St0 nck7 nck6 nck5 nck4 nck3 nck2 nck1 nck0 Vlv1 Vlv0
+.default_input_arrival 0.00 0.00 
+.default_output_required 0.00 0.00 
+.default_input_drive 0.20 0.20 
+.default_output_load 1.00 
+.default_max_input_load 999.00 
+.latch    [3463] P7 re NIL 0
+.latch    [3464] P6 re NIL 0
+.latch    [3465] P5 re NIL 0
+.latch    S4 P4 re NIL 0
+.latch    [3467] P3 re NIL 0
+.latch    [3468] P2 re NIL 0
+.latch    [3469] P1 re NIL 0
+.latch    [3470] P0 re NIL 0
+.latch    [3471] LatchOut_v5 re NIL 0
+.latch    [3239] LatchOut_v6 re NIL 0
+.latch    [3473] LatchOut_v7 re NIL 1
+.names init reset ph7 ph6 ph5 ph4 ph3 ph2 [3142]
+0------- 1
+-1------ 1
+--1----- 1
+---1---- 1
+----1111 1
+.names ph7 ph6 ph5 St1 [3480] [3147]
+---0- 1
+00--- 1
+0-0-1 1
+.names [3147] [3142] St0
+0- 1
+-0 1
+.names LatchOut_v6 [3147] [3142] St0 St1 [3476] [3154]
+1-1--- 1
+0---0- 1
+---0-1 1
+-0---0 1
+.names [3154] P6 nck6
+01 1
+.names [3154] P1 nck1
+01 1
+.names [3154] P0 [3470]
+1- 1
+-0 1
+.names [3470] nck0
+0 1
+.names nck1 [3470] [3469]
+11 1
+00 1
+.names [3469] nck1 nck3 nck2 nck4 [3169]
+1---- 1
+-0--- 1
+--0-- 1
+---0- 1
+----0 1
+.names nck6 [3477] [3464]
+11 1
+00 1
+.names [3464] nck6 nck7 [3463]
+--1 1
+01- 1
+.names [3169] nck5 [3465]
+11 1
+00 1
+.names [3154] P3 nck3
+01 1
+.names [3154] P2 nck2
+01 1
+.names nck2 [3478] [3468]
+11 1
+00 1
+.names nck3 [3479] [3467]
+11 1
+00 1
+.names [3169] [3467] nck3 nck4 S4
+1--1 1
+101- 1
+.names [3154] P5 nck5
+01 1
+.names nck6 [3469] [3470] nck3 nck2 nck5 nck7 nck4 [3179]
+1------- 1
+---1---- 1
+-----1-- 1
+------1- 1
+-------1 1
+-1--1--- 1
+--0-1--- 1
+.names LatchOut_v7 [3147] [3179] [3473]
+-1- 1
+1-0 1
+.names [3147] [3473] Vlv0 [3471]
+--1 1
+01- 1
+.names [3142] [3239]
+0 1
+.names init reset [3142] St1
+101 1
+.names [3154] P7 nck7
+01 1
+.names [3154] P4 nck4
+01 1
+.names [3473] Vlv1
+0 1
+.names LatchOut_v5 LatchOut_v6 [3142] [3179] Vlv0
+--01 1
+110- 1
+.names LatchOut_v5 LatchOut_v7 [3476]
+1- 1
+-0 1
+.names [3169] nck5 [3477]
+1- 1
+-0 1
+.names [3469] [3470] [3478]
+1- 1
+-1 1
+.names nck2 [3468] [3479]
+0- 1
+-1 1
+.names ph4 ph3 ph2 ph1 ph0 [3480]
+0---- 1
+-0000 1
+.end

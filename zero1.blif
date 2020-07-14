@@ -1,0 +1,5 @@
+.model zero1
+.inputs
+.outputs O
+.names O
+.end

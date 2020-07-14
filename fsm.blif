@@ -1,0 +1,180 @@
+.model FSM
+.inputs init reset to Xh1 Xh0
+.outputs start St1 St0 Vlv1 Vlv0
+.latch    [5] LatchOut_v5   0
+.latch    [6] LatchOut_v6   0
+.latch    [7] LatchOut_v7   1
+.start_kiss
+.i 5
+.o 5
+.p 29
+.s 5
+.r N
+10001 A A 00100
+11--- A N 10000
+0---- A N 10000
+10011 A B 11100
+10010 A N 11000
+10101 A BS 00101
+11--- N N 10000
+0---- N N 10000
+---00 N N 10000
+10010 N N 01000
+10110 N N 01000
+10001 N A 10100
+10011 N B 11100
+11--- B N 10000
+0---- B N 10000
+10011 B B 01100
+10001 B A 10100
+10010 B N 11000
+10111 B AS 01110
+10-01 BS BS 00101
+10011 BS B 11100
+0---- BS N 10000
+11--- BS N 10000
+10010 BS N 11000
+10-11 AS AS 01110
+10001 AS A 10100
+0---- AS N 10000
+11--- AS N 10000
+10010 AS N 11000
+.end_kiss
+.latch_order LatchOut_v5 LatchOut_v6 LatchOut_v7
+.code A 011
+.code N 001
+.code B 101
+.code BS 111
+.code AS 000
+.names Xh0 [6] LatchOut_v6 St1 [47] [50] start
+-01--- 1
+--00-- 1
+0---1- 1
+----00 1
+.names [6] [50] St0
+1- 1
+-0 1
+.names [7] Vlv1
+0 1
+.names to LatchOut_v5 LatchOut_v6 St1 [46] Vlv0
+1-1-0 1
+-1100 1
+.names to Xh0 Vlv0 [6] LatchOut_v7 [46] [5]
+--1--- 1
+01-010 1
+.names Xh1 Xh0 [46] [6]
+010 1
+.names to LatchOut_v7 [50] [7]
+--1 1
+01- 1
+.names Xh1 [46] St1
+10 1
+.names init reset [46]
+0- 1
+-1 1
+.names LatchOut_v5 LatchOut_v7 [47]
+1- 1
+-0 1
+.names Xh0 St1 [50]
+0- 1
+-0 1
+.exdc 
+.inputs init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7
+.outputs [5] [6] [7] start St1 St0 Vlv1 Vlv0
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 [5]
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 [6]
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 [7]
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 start
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 St1
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 St0
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 Vlv1
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.names init reset to Xh1 Xh0 LatchOut_v5 LatchOut_v6 LatchOut_v7 Vlv0
+-----1-0 1
+------10 1
+10-001-- 1
+1011--1- 1
+10-00-1- 1
+1010---0 1
+101-0--0 1
+10-00--0 1
+1010-10- 1
+101-010- 1
+101-1001 1
+.end

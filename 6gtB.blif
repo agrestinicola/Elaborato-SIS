@@ -1,0 +1,9 @@
+.model 6gtB
+.inputs B7 B6 B5 B4 B3 B2 B1 B0
+.outputs 6gtB
+.names B7 B6 B5 B4 B3 B2 6gtB
+000--- 1
+00-0-- 1
+00--0- 1
+00---0 1
+.end

@@ -1,0 +1,8 @@
+.model sumnout
+.inputs A B CIN
+.outputs O
+.names A B CIN O
+1-- 1
+-1- 1
+--1 1
+.end

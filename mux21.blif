@@ -1,0 +1,7 @@
+.model mux21
+.inputs start A B
+.outputs O
+.names start A B O
+01- 1
+1-1 1
+.end

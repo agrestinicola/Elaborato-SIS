@@ -1,0 +1,12 @@
+.model 4gt8
+.inputs A7 A6 A5 A4 A3 A2 A1 A0
+.outputs Agt4
+.names A7 A6 A5 A4 A3 A2 A1 A0 Agt4
+1------- 1
+-1------ 1
+--1----- 1
+---1---- 1
+----1--- 1
+-----11- 1
+-----1-1 1
+.end

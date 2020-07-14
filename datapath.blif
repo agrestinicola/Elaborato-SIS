@@ -1,0 +1,87 @@
+.model datapath
+.inputs start ph7 ph6 ph5 ph4 ph3 ph2 ph1 ph0
+.outputs to th1 th0 nck7 nck6 nck5 nck4 nck3 nck2 nck1 nck0
+.latch    S7 P7 re NIL 0
+.latch    S6 P6 re NIL 0
+.latch    S5 P5 re NIL 0
+.latch    S4 P4 re NIL 0
+.latch    S3 P3 re NIL 0
+.latch    S2 P2 re NIL 0
+.latch    S1 P1 re NIL 0
+.latch    S0 P0 re NIL 0
+.names nck7 nck6 nck5 nck4 nck3 nck2 [34] to
+1------ 1
+-1----- 1
+--1---- 1
+---1--- 1
+----1-- 1
+-----11 1
+.names ph7 ph6 ph5 ph4 ph3 ph2 th1
+1----- 1
+-1---- 1
+--1111 1
+.names ph7 ph6 ph5 ph4 ph2 th1 [33] th0
+1------ 1
+-----0- 1
+-11---- 1
+--011-- 1
+---10-1 1
+.names start P7 nck7
+01 1
+.names start P6 nck6
+01 1
+.names start P5 nck5
+01 1
+.names start P4 nck4
+01 1
+.names start P3 nck3
+01 1
+.names start P2 nck2
+01 1
+.names start P1 nck1
+01 1
+.names start P0 nck0
+01 1
+.names nck7 nck6 S6 S7
+1-- 1
+-10 1
+.names nck6 [29] S6
+11 1
+00 1
+.names nck5 [237] [29] S5
+1-1 1
+-11 1
+.names nck4 nck3 S3 [237] S4
+1--0 1
+-100 1
+.names nck3 [30] S3
+11 1
+00 1
+.names nck2 [27] S2
+11 1
+00 1
+.names [27] [34] S1
+11 1
+.names nck0 S0
+0 1
+.names nck4 nck3 nck2 [27] [237]
+1110 1
+.names nck1 nck0 [27]
+0- 1
+-0 1
+.names nck5 [237] [29]
+0- 1
+-0 1
+.names nck2 S2 [30]
+0- 1
+-1 1
+.names ph3 ph1 [32]
+1- 1
+-1 1
+.names ph0 [32] [33]
+1- 1
+-1 1
+.names nck1 nck0 [34]
+1- 1
+-1 1
+.end
